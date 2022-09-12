@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+:root {
+    --bg-color: #6c737d;
+    --btn-bg-color: #283143;
+    --text-btn: #f3f4f6;
+}
+
+body {
+
+    text-align: center;
+    margin: 5em auto;
+    background-color: var(--btn-bg-color);
+    color: var(--text-btn);
+    max-width: 600px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px var(--secondary-color);
+}
+
+h2 {
+    text-align: center;
+}
+.main_nav {
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    color: var(--btn-bg-color);
+    background-color: var(--text-btn);
+    border-radius: 0.5rem;
+    border: 2rem 1em solid var(--bg-color);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 1rem;
+    text-align: center;
+
+
+}
+
+.main_nav:hover {
+    color: rgb(230, 178, 151);
+}
+
+.sub-container input,
+label {
+	display: block;
+	width: 80%;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+.sub-container input {
+	padding: 0.3rem;
+	margin-top: 0.7rem;
+	margin-bottom: 1rem;
+	background-color: var(--secondary-color);
+}
+
+
+
+
+#check-btn {
+    background-color: var(--bg-color);
+    color: var(--text-btn);
+    font-weight: bold;
+    padding: 0.3rem;
+    width: 38%;
+    margin-top: 1rem;
+    border: 2px solid var(--btn-bg-color);
+    border-radius: 0.3rem;
+}
+
+.back-btn {
+
+    background-color: var(--text-btn);
+    color: var(--btn-bg-color);
+    border-radius: 0.2rem;
+    text-decoration: none;
+    ;
+    padding: 0.1rem 0.1rem;
+    display: block;
+    width: 5rem;
+
+
+
+}
+
+#output {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-btn);
+    text-shadow: 1.5px 1.5px var(--btn-bg-color);
+    border: 0.1rem solid var(--text-btn);
+    text-align: center;
+    
+}
