@@ -2,74 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Quiz: triangle</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>QuizS</title>
 </head>
 
 <body>
-    <h1>Traingle-Quiz</h1>
-
+    <h1>Quiz: Triangle</h1>
     <a class="back-btn" href="./index.html">Go back</a>
+    <div class="container">
+        <form id="quiz_form" onsubmit="return false">
+            <div class="question_container">
+                <h2>
+                    1. If a triangle has angles 90°, 60°, 30°. Is it a right angle
+                    triangle?
+                </h2>
+                <label><input type="radio" name="question1" value="Yes"  />Yes</label>
+                <label><input type="radio" name="question1" value="No" />No</label>
+            </div>
 
-    <form class="form-quiz">
-        <div class="container">
-            <p>1. If a triangle has angles 90°, 60°, 30°. Is it a right angle triangle?</p>
-            <label><input type="radio" name="questionOne" value="Yes" />Yes</label>
-            <label><input type="radio" name="questionOne" value="No" />No</label>
-        </div>
-        <div class="container">
-            <p>2. How many sides and vertices are there in a triangle?</p>
-            <label><input type="radio" name="questionTwo" value="4" />4</label>
-            <label><input type="radio" name="questionTwo" value="2" />2</label>
-            <label><input type="radio" name="questionTwo" value="3" />3</label>
-        </div>
-        <div class="container">
-            <p>3. If the two angles of a triangle are 85° and 40° , then find the third angle of the
-                triangle?</p>
-            <label><input type="radio" name="questionThree" value="55°" />55°</label>
-            <label><input type="radio" name="questionThree" value="45°" />45°</label>
-            <label><input type="radio" name="questionThree" value="65°" />65°</label>
-        </div>
-        <div class="container">
-            <p>4. Is it possible to have a triangle with the given angles(40°,60°,90°)</p>
-            <label><input type="radio" name="questionFour" value="Yes" />Yes</label>
-            <label><input type="radio" name="questionFour" value="No" />No</label>
+            <div class="question_container">
+                <h2>
+                    2. The perimeter of an equilateral triangle is 15cm. What is the
+                    length of one side?
+                </h2>
+                <label><input type="radio" name="question2" value="15cm" />15cm</label>
+                <label><input type="radio" name="question2" value="5cm" />5cm</label>
+                <label><input type="radio" name="question2" value="45cm" />45cm</label>
+            </div>
 
-        </div>
-        <div class="container">
-            <p>5.Where does an angle in a triangle?</p>
-            <label><input type="radio" name="questionFive" value="vertex" />vertex</label>
-            <label><input type="radio" name="questionFive" value="side" />side</label>
-            <label><input type="radio" name="questionFive" value="center" />center</label>
+            <div class="question_container">
+                <h2>
+                    3. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of
+                    triangle?
+                </h2>
+                <label><input type="radio" name="question3" value="Equilateral"  />Equilateral</label>
+                <label><input type="radio" name="question3" value="Isoceles" />Isoceles</label>
+                <label><input type="radio" name="question3" value="Scalene" />Scalene</label>
+            </div>
 
-        </div>
-        <div class="container">
-            <p>6.In which of the following triangle, all the sides are unequal?</p>
-            <label><input type="radio" name="questionSix" value="scalene" />scalene</label>
-            <label><input type="radio" name="questionSix" value="isosceles" />isosceles</label>
-            <label><input type="radio" name="questionSix" value="right angled" />right angled</label>
+            <div class="question_container">
+                <h2>
+                    4. If a triangle has 2 angles of 75°. What is the measure of third
+                    angle in degree?
+                </h2>
+                <label><input type="radio" name="question4" value="15°" />15</label>
+                <label><input type="radio" name="question4" value="45°" />45</label>
+                <label><input type="radio" name="question4" value="30°" />30</label>
+            </div>
+            <div class="question_container">
+                <h2>5.Where does an angle in a triangle?</h2>
+                <label><input type="radio" name="questionFive" value="vertex" />vertex</label>
+                <label><input type="radio" name="questionFive" value="side" />side</label>
+                <label><input type="radio" name="questionFive" value="center" />center</label>
 
-        </div>
-        <div class="container">
+            </div>
+            <div class="question_container">
+                <h2>6.In which of the following triangle, all the sides are unequal?</h2>
+                <label><input type="radio" name="questionSix" value="scalene" />scalene</label>
+                <label><input type="radio" name="questionSix" value="isosceles" />isosceles</label>
+                <label><input type="radio" name="questionSix" value="right angled" />right angled</label>
 
-            <p>7.Choose the type of triangle in which two sides are equal ?</p>
-            <label><input type="radio" name="questionSeven" value="scalene" />scalene</label>
-            <label><input type="radio" name="questionSeven" value="isosceles" />isosceles</label>
-            <label><input type="radio" name="questionSeven" value="right angled" />right angled</label>
-        </div>
-        <div class="container">
-            <p>8.Each angle of an equilateral triangle is equal to how much?</p>
-            <label><input type="radio" name="questionEight" value="60°" />60°</label>
-            <label><input type="radio" name="questionEight" value="70°" />70°</label>
-            <label><input type="radio" name="questionEight" value="50°" />50°</label>
-        </div>
-    </form>
-    <button id="check-btn">Submit your answers</button>
-    <div id="output" style="display: none"></div>
-    <script src="quiz.js" type="text/javascript"></script>
+            </div>
+            <div class="question_container">
+
+                <h2>7.Choose the type of triangle in which two sides are equal ?</h2>
+                <label><input type="radio" name="questionSeven" value="scalene" />scalene</label>
+                <label><input type="radio" name="questionSeven" value="isosceles" />isosceles</label>
+                <label><input type="radio" name="questionSeven" value="right angled" />right angled</label>
+            </div>
+            <div class="question_container">
+                <h2>8.Each angle of an equilateral triangle is equal to how much?</h2>
+                <label><input type="radio" name="questionEight" value="60°" />60°</label>
+                <label><input type="radio" name="questionEight" value="70°" />70°</label>
+                <label><input type="radio" name="questionEight" value="50°" />50°</label>
+            </div>
+            <button id="check-btn" type="submit">Submit</button>
+        </form>
+
+        <div id="output" ></div>
+    </div>
+    <script src="./quiz.js"></script>
 </body>
 
 </html>

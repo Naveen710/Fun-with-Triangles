@@ -1,7 +1,7 @@
 const sideOne = document.querySelector(".side-one")
 const sideTwo = document.querySelector(".side-two")
 const submitAnswer = document.querySelector("#check-btn")
-const output = document.querySelector(".output")
+const output = document.querySelector("#output")
 
 function calculateHypotenuse(a, b) {
     let hypo = (Math.sqrt(a * a + b * b)).toFixed(2);
