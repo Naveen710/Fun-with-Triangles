@@ -1,6 +1,6 @@
 # Fun_with_triangles
 
-# About
+## About
 
 This app which has four parts:
 
