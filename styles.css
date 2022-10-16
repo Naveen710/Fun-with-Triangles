@@ -107,3 +107,9 @@ label {
     text-align: center;
     
 }
+#error {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    
+    padding-bottom: 2rem;
+}

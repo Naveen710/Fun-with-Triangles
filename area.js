@@ -1,25 +1,30 @@
 const sideOne = document.querySelector(".side-one")
 const sideTwo = document.querySelector(".side-two")
 const submitAnswer = document.querySelector("#check-btn")
+const errorMessage=document.querySelector("#error")
 const output = document.querySelector("#output")
 
-function calculateArea(a, b) {
-    let area = 0.5*(a  + b ).toFixed(2);
-    output.innerText="The Area of triangle is " + area
-}
-submitAnswer.addEventListener("click", checkInput);
+submitAnswer.addEventListener("click", calculateArea);
 
-function checkInput() {
+function calculateArea() {
     const a = Number(sideOne.value)
     const b = Number(sideTwo.value)
-    if ((a === "") || (b === "")) {
-        output.innerText = "Please enter both the value";
-    } 
-     else if (a < 0 || b < 0) {
-    output.innerText = "The minimum value accepted is 1";
-    }else {
-        calculateArea(a, b)
+    if (a !== 0 && b !== 0) {
+        if (a > 0 && b > 0) {
+            errorMessage.style.display = "none"
+            output.style.display = "block"
+            const area = 0.5 * (a * b).toFixed(2);
+            output.innerText = `The area of the triangle is ${area} cm²`
+
+        } else {
+            console.log("hi")
+            errorMessage.style.display = "block"
+            output.style.display = "none"
+            errorMessage.innerText = "Please enter both positive values of a & b!";
+        }
+    } else {
+        errorMessage.style.display = "block"
+        output.style.display = "none"
+        errorMessage.innerText= "Please enter both the values of a & b";
     }
-
-
 }
